@@ -6,6 +6,8 @@ Hope this might be useful to someone! :-)
 
 ## Overview
 
+### Projects
+
 <table style="width:100%">
   <tr>
     <th>
@@ -73,10 +75,26 @@ Hope this might be useful to someone! :-)
            <br><a href="./project_10_MPC_control" name="p10_code">(code)</a>
         </p>
     </th>
+   <th><p align="center">
+           <a href="./project_11_path_planning"><img src="./project_11_path_planning/img/overview.jpg"                         alt="Overview" width="60%" height="60%"></a>
+           <br>P11: Path Planning
+           <br><a href="./project_11_path_planning" name="p11_code">(code)</a>
+        </p>
+    </th>
+    <th><p align="center">
+          <a href="./project_12_road_segmentation"><img src="./project_12_road_segmentation/img/overview.jpg"                         alt="Overview" width="60%" height="60%"></a>
+           <br>P12: Road Segmentation
+           <br><a href="./project_12_road_segmentation" name="p12_code">(code)</a>
+        </p>
+    </th>
   </tr>
 </table>
 
+### Capstone
+- [**Traffic light classifier:**](https://github.com/ndrplz/self-driving-car/tree/master/capstone_traffic_light_classifier) Simple traffic light classifier to be integrated in the capstone project.
+![simulator_dataset](capstone_traffic_light_classifier/img/simulator_examples.png)
 
+--- 
 ## Table of Contents
 
 #### [P1 - Detecting Lane Lines (basic)](project_1_lane_finding_basic)
@@ -99,6 +117,35 @@ Hope this might be useful to someone! :-)
  - **Summary:** Created a vehicle detection and tracking pipeline with OpenCV, histogram of oriented gradients (HOG), and support vector machines (SVM). Implemented the same pipeline using a deep network to perform detection. Optimized and evaluated the model on video data from a automotive camera taken during highway driving.
  - **Keywords:** Computer Vision, Deep Learning, OpenCV
  
+ #### [P6 - Extended Kalman Filter](project_6_extended_kalman_filter)
+ - **Summary:** Implement the extended Kalman filter in C++. Simulated lidar and radar measurements are used to detect a bicycle that travels around your vehicle. Kalman filter, lidar measurements and radar measurements are used to track the bicycle's position and velocity.
+ - **Keywords:** C++, Kalman Filter
+
+ #### [P7 - Unscented Kalman Filter](project_7_unscented_kalman_filter)
+ - **Summary:**  Utilize an Unscented Kalman Filter to estimate the state of a moving object of interest with noisy lidar and radar measurements. Kalman filter, lidar measurements and radar measurements are used to track the bicycle's position and velocity.
+ - **Keywords:** C++, Kalman Filter
+ 
+  #### [P8 - Kidnapped Vehicle](project_8_kidnapped_vehicle)
+ - **Summary:** Your robot has been kidnapped and transported to a new location! Luckily it has a map of this location, a (noisy) GPS estimate of its initial location, and lots of (noisy) sensor and control data. In this project you will implement a 2 dimensional particle filter in C++. Your particle filter will be given a map and some initial localization information (analogous to what a GPS would provide). At each time step your filter will also get observation and control data.
+ - **Keywords:** C++, Particle Filter
+ 
+ #### [P9 - PID Control](project_9_PID_control)
+ - **Summary:** Implement a PID controller for keeping the car on track by appropriately adjusting the steering angle.
+ - **Keywords:** C++, PID Controller
+ 
+#### [P10 - MPC Control](project_10_MPC_control)
+- **Summary:** Implement an MPC controller for keeping the car on track by appropriately adjusting the steering angle. Differently from previously implemented PID controller, MPC controller has the ability to anticipate future events and can take control actions accordingly. Indeed, future time steps are taking into account while optimizing current time slot.
+- **Keywords:** C++, MPC Controller
+
+#### [P11 - Path Planning](project_11_path_planning)
+- **Summary:** The goal in this project is to build a path planner that is able to create smooth, safe trajectories for the car to follow. The highway track has other vehicles, all going different speeds, but approximately obeying the 50 MPH speed limit. The car transmits its location, along with its sensor fusion data, which estimates the location of all the vehicles on the same side of the road.
+- **Keywords:** C++, Path Planning
+
+#### [P12 - Road Segmentation](project_12_road_segmentation)
+- **Summary:** Implement the road segmentation using a fully-convolutional network.
+- **Keywords:** Python, TensorFlow, Semantic Segmentation
+
+
  
 <p align="center">
   <img src="https://cdn-images-1.medium.com/max/800/1*dRJ1tz6N3MqO1iCFzlhxZg.jpeg" width="400">
